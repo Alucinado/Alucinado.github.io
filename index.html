@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!--Tittle -->
+    <title>Footlux</title>
+    <!--Link-Icon -->
+    <link rel="icon" type="image/x-icon" href="./img/logo-web-v2.png">
+    <!--Link-CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/scrollreveal.js"></script>
+    <!--Link-Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Link-sweetalert-2 -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!--Link-Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jockey+One&family=League+Spartan&family=Martel+Sans&family=Noto+Sans+Lao&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="contenedor-loader" id="contenedor-loader">
+        <div class="loader"></div>
+    </div>
+    <header class="header-container" id="header-container">
+        <nav class="nav-container" id="nav-container">
+            <div class="navb-content">
+                <div class="container-img">
+                    <img src="./img/logo-web.png" alt="" id="img_logo_nav">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16" id="icon_down">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+                <div class="burguer-icon" id="burguer-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="container-link" id="container_link">
+                    <div class="btn-exit" id="container-icon-x">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <a href="#header-container" class="archor_link">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="#seccion-shoes" class="archor_link">
+                        <li>Zapatillas</li>
+                    </a>
+
+                    <a href="#seccion-off" class="archor_link">
+                        <li>Ofertas</li>
+                    </a>
+
+                    <a href="#seccion-contact" class="archor_link">
+                        <li>Contactos</li>
+                    </a>
+                </div>
+                <div class="container-icons" id="container-icons">
+                    <a href="#"><i class='bx bx-heart icon__black'></i></a>
+                    <a href="./pages/login.html"><i class='bx bx-user icon__black'></i></a>
+                    <a href="#"><i class='bx bx-cart icon__black'></i></a>
+                    <a href="#"><i class='bx bxs-moon icon__black'></i></a>
+                </div>
+                <div class="footer-nav" id="footer-nav">
+                    <hr>
+                    <h1>Footlux</h1>
+                </div>
+            </div>
+        </nav>
+        <section class="hero-container">
+            <div class="hero-container-content">
+                <div class="hero-container-text">
+                    <div class="text-hero-header">
+                        <h1>AIR <span class="typed">JORDAN 5 RETRO COMPOST</span></h1>
+                        <p>Una de las mejores zapatillas de nivel internacional disponible ahora solo en
+                            <strong>FOOTLUX</strong>
+                        </p>
+                    </div>
+                    <div class="hero-container-btn">
+                        <button id="btn-hero" class="item-btn"><a href="">Buy Now</a></button>
+                        <h3 class="item-btn"><a href="">Ver detalles</a></h3>
+                    </div>
+                </div>
+                <figure class="content-img-hero animate__animated animate__fadeInRight">
+                    <img src="/img/img-headerv3.png" alt="">
+                </figure>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container-shoes low-model">
+            <div class="shoes-text-container">
+                <div class="shoes-text" id="seccion-shoes">
+                    <h3>SHOP Jordan's NIKE</h3>
+                    <h4>LOW Model's</h4>
+                </div>
+                <div class="rows-icon">
+                    <i class="fa-solid fa-arrow-left" id="retroceder"></i>
+                    <i class="fa-solid fa-arrow-right" id="avanzar"></i>
+                </div>
+            </div>
+            <div class="card-container" id="card-container">
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-1.png" class="img-1">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 599</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-2.png" alt="" class="img-2">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low SE</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 599</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-3.png" alt="" class="img-3">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Jordan 1 Retro Low OG Black Dark Powder Blue</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 719</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-4.png" alt="" class="img-4">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Force 1</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 480</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-5.png" alt="" class="img-5">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 2 Retro Low
+                        </h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 799</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-6.png" alt="" class="img-6">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low Top Shoes</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 650</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/low-6.png" alt="" class="img-7">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-shoes high-model">
+            <div class="shoes-text-container">
+                <div class="shoes-text">
+                    <h3>SHOP Jordan's NIKE</h3>
+                    <h4>HIGH Model's</h4>
+                </div>
+                <div class="rows-icon">
+                    <i class="fa-solid fa-arrow-left" id="retroceder"></i>
+                    <i class="fa-solid fa-arrow-right" id="avanzar"></i>
+                </div>
+            </div>
+            <div class="card-container" id="card-container">
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-1.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Retro High OG Chicago</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-2.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>AIR JORDAN 1 RETRO HIGH DIAMOND</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-3.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 RETRO High OG CRAFT</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-4.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-5.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-6.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/high-3.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-shoes retro-model">
+            <div class="shoes-text-container">
+                <div class="shoes-text">
+                    <h3>SHOP Jordan's NIKE</h3>
+                    <h4>RETRO Model's</h4>
+                </div>
+                <div class="rows-icon">
+                    <i class="fa-solid fa-arrow-left" id="retroceder"></i>
+                    <i class="fa-solid fa-arrow-right" id="avanzar"></i>
+                </div>
+            </div>
+            <div class="card-container" id="card-container">
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-1.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Retro CLASSIC</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 860</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-2.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan Retro 2</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 999</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-3.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Jordan 3 Retro “Fire Red”</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 749</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-4.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Jordan 4 Retro "OREO"</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-5.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-6.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Jordan-4.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-offerts" id="seccion-off">
+            <div class="container-ooferts-text">
+                <h1 class="title-offert">20% DE DESCUENTO AQUI</h1>
+            </div>
+            <div class="container-offerts-content">
+                <div class="container-offerts-img">
+                    <div class="container-img">
+                        <div class="img-text">
+                            <h4><i class="fa-solid fa-x"></i><span>S./ 2073</span></h4>
+                            <h5><span>S/. 1659</span></h5>
+                        </div>
+                        <img src="./img/Jordan-9.png" alt="">
+                    </div>
+                    <div class="container-img">
+                        <div class="img-text">
+                            <h4><span>S./ 2073</span></h4>
+                            <h5><span>S/. 1659</span></h5>
+                        </div><img src="./img/Jordan-7.png" alt="">
+                    </div>
+                    <div class="container-img">
+                        <div class="img-text">
+                            <h4><span>S./ 2073</span></h4>
+                            <h5><span>S/. 1659</span></h5>
+                        </div><img src="./img/Jordan-8.png" alt="">
+                    </div>
+                </div>
+                <div class="container-content-text">
+                    <div class="container-text-main">
+                        <h1 class="text-main-title">Tenis AIR Jordan 9 Retro</h1>
+                        <p>Tenis Air Jordan 9 Retro en cuero de color blanco de Jordan. Estos estilos son suministrados
+                            por un marketplace de zapatillas premium.</p>
+                    </div>
+                    <a href="" class="btn-buy-off">Buy Now</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-shoes variedad">
+            <div class="shoes-text-container">
+                <div class="shoes-text">
+                    <h3>SHOP NIKE</h3>
+                    <h4>Variedad</h4>
+                </div>
+                <div class="rows-icon">
+                    <i class="fa-solid fa-arrow-left" id="retroceder"></i>
+                    <i class="fa-solid fa-arrow-right" id="avanzar"></i>
+                </div>
+            </div>
+            <div class="card-container" id="card-container">
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-1.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Nike Fly</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 57</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-2.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Nike Dri-FIT Rise</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 67</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-3.png" class="img-big" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Nike <a href="#" id="easter-egg">Brasillia</a> 9.5</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 253</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-4.png" alt="" class="img-big">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Nike Therma-FIT Tech Fleece</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-5.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-6.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Nike APEX</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 123</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card-item" id="card-item">
+                    <figure>
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                        <img src="./img/Variedad-2.png" alt="">
+                    </figure>
+                    <div class="card-item-text">
+                        <h1>Air Jordan 1 Low OG</h1>
+                        <p>Las mejores zapatillas, luce y presume ese estilo urbano que tanto te gusta</p>
+                    </div>
+                    <div class="card-item-footer">
+                        <h3>S./ 428</h3>
+                        <a href="">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-main-form">
+            <div class="container-img-form">
+                <img src="./img/img-contactus2.jpg" alt="" id="img_change">
+            </div>
+            <div class="container-form">
+                <div class="container-text-form">
+                    <h1>Envianos un Mensaje</h1>
+                    <p>SI desea recibir mayor información sobre nuestra tienda y sobre los productos que ofrecemos no
+                        dude en ponerse en contacto con nosotros.</p>
+                </div>
+                <form action="">
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" id="nombre" class="form-control">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Ingrese su Email" required class="form-control" id="email">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="txt_area" cols="30" rows="10" class="form-control" id="mensaje"></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <a href="https://wa.link/29va7u" class="icon_wsp" target="_blank"><i class="fa-brands fa-whatsapp item_wsp"></i></a>
+    <footer id="seccion-contact">
+        <div class="footer-content-container">
+            <div class="footer-content">
+                <div class="card-footer email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h1>Certus@gmai.com</h1>
+                </div>
+                <a class="btn-content-footer" href="#">
+                    <span href="">FOOTLUX</span>
+                </a>
+                <div class="card-footer number">
+                    <i class="fa-solid fa-mobile"></i>
+                    <h1>993-495-805</h1>
+                </div>
+            </div>
+            <div class="footer-content-under">
+                <hr>
+                <div class="container-icon-footer">
+                    <a class="icon-ft-item" href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="icon-ft-item" href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="icon-ft-item" href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="icon-ft-item" href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--script-SweetAlert-2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Font-Awesome -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!--script-bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Library-types -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- scrip-js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
