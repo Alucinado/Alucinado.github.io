@@ -46,6 +46,7 @@ main {
 main .container-shoes {
   width: 88%;
   margin: 0 auto;
+  max-width: 1400px;
   overflow: hidden;
   /*         overflow-X: auto;
           resize: horizontal; */
